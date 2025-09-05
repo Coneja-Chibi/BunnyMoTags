@@ -1,0 +1,11 @@
+{
+    "display_name": "BunnyMoTags",
+    "loading_order": 50,
+    "requires": [],
+    "optional": [],
+    "js": "index.js",
+    "css": "style.css",
+    "author": "BunnyMo Community",
+    "version": "1.0.1",
+    "generate_interceptor": "bunnyMoTagsInterceptor"
+}

@@ -1,0 +1,252 @@
+<div class="bmt-extension-settings">
+    <div class="inline-drawer">
+        <div class="inline-drawer-toggle inline-drawer-header">
+            <b>🥕 BunnyMoTags</b>
+            <div class="inline-drawer-icon fa-solid fa-circle-chevron-down down"></div>
+        </div>
+        <div class="inline-drawer-content">
+            
+            <!-- Extension Status Card -->
+            <div class="bmt-status-card">
+                <div class="bmt-status-header">
+                    <h3>📊 Extension Status</h3>
+                </div>
+                <div class="bmt-status-body">
+                    <div id="bmt-status" class="bmt-status-content">
+                        <div class="status-item">
+                            <span class="status-label">Status:</span>
+                            <span class="status-value">Initializing...</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feature Controls -->
+            <div class="bmt-card">
+                <div class="bmt-card-header">
+                    <h3>⚡ Feature Controls</h3>
+                    <p class="bmt-card-subtitle">Enable or disable major BunnyMo components</p>
+                </div>
+                <div class="bmt-card-body">
+                    <div class="bmt-settings-grid">
+                        <div class="bmt-setting-item">
+                            <label class="bmt-toggle">
+                                <input type="checkbox" id="bmt-enabled" checked>
+                                <span class="bmt-toggle-slider"></span>
+                                <span class="bmt-toggle-label">Master Enable</span>
+                            </label>
+                            <div class="bmt-help-text">Enable/disable all BunnyMo functionality</div>
+                        </div>
+                        <div class="bmt-setting-item">
+                            <label class="bmt-toggle">
+                                <input type="checkbox" id="bmt-send-to-ai" checked>
+                                <span class="bmt-toggle-slider"></span>
+                                <span class="bmt-toggle-label">AI Integration</span>
+                            </label>
+                            <div class="bmt-help-text">Send character data to AI context</div>
+                        </div>
+                        <div class="bmt-setting-item">
+                            <label class="bmt-toggle">
+                                <input type="checkbox" id="bmt-use-card-display" checked>
+                                <span class="bmt-toggle-slider"></span>
+                                <span class="bmt-toggle-label">Full Character Cards</span>
+                            </label>
+                            <div class="bmt-help-text">Show full interactive cards vs. simple 🥕 indicators</div>
+                        </div>
+                        <div class="bmt-setting-item">
+                            <label class="bmt-toggle">
+                                <input type="checkbox" id="bmt-worldinfo-enabled" checked>
+                                <span class="bmt-toggle-slider"></span>
+                                <span class="bmt-toggle-label">WorldInfo Integration</span>
+                            </label>
+                            <div class="bmt-help-text">Enable WorldInfo debugging and analysis features</div>
+                        </div>
+                        <div class="bmt-setting-item">
+                            <label class="bmt-label">
+                                <span class="bmt-label-text">Global Scan Depth Override</span>
+                                <span class="bmt-label-hint">Override scan depth for all WorldInfo entries (0 = use entry settings)</span>
+                            </label>
+                            <div class="bmt-slider-container">
+                                <input type="range" id="bmt-global-scan-depth" min="0" max="50" value="0" class="bmt-slider">
+                                <span class="bmt-slider-value" id="bmt-global-scan-depth-value">0</span>
+                            </div>
+                            <div class="bmt-help-text">When set to 0, uses individual entry scanDepth settings. When > 0, overrides all entries globally.</div>
+                        </div>
+                        <div class="bmt-setting-item">
+                            <label class="bmt-toggle">
+                                <input type="checkbox" id="bmt-user-editable" checked>
+                                <span class="bmt-toggle-slider"></span>
+                                <span class="bmt-toggle-label">User Editing</span>
+                            </label>
+                            <div class="bmt-help-text">Allow editing BunnyMo blocks in chat</div>
+                        </div>
+                        <div class="bmt-setting-item">
+                            <label class="bmt-toggle">
+                                <input type="checkbox" id="bmt-debug">
+                                <span class="bmt-toggle-slider"></span>
+                                <span class="bmt-toggle-label">Debug Mode</span>
+                            </label>
+                            <div class="bmt-help-text">Enable detailed console logging for troubleshooting</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Lorebook Management -->
+            <div class="bmt-card">
+                <div class="bmt-card-header">
+                    <h3>📚 Lorebook Management</h3>
+                    <p class="bmt-card-subtitle">Configure character repositories and tag libraries</p>
+                </div>
+                <div class="bmt-card-body">
+                    <div class="bmt-search-container">
+                        <input type="text" id="bmt-search-lorebooks" class="bmt-search-input" placeholder="🔍 Search lorebooks...">
+                    </div>
+                    <div class="bmt-lorebook-container">
+                        <div class="bmt-lorebook-list" id="bmt-lorebook-list">
+                            <div class="bmt-loading-state">
+                                <div class="bmt-spinner"></div>
+                                <p>Loading available lorebooks...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bmt-action-bar">
+                        <button id="bmt-scan-btn" class="bmt-primary-btn">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            Scan Selected Lorebooks
+                        </button>
+                        <button id="bmt-test-display" class="bmt-secondary-btn">
+                            <i class="fa-solid fa-eye"></i>
+                            Test Display
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Template Manager -->
+            <div class="bmt-card">
+                <div class="bmt-card-header">
+                    <h3>🎯 Template Manager</h3>
+                    <p class="bmt-card-subtitle">Configure BunnyMo templates and macros</p>
+                </div>
+                <div class="bmt-card-body">
+                    <div class="bmt-template-actions">
+                        <button id="edit_template_prompt" class="menu_button flex1" title="Edit templates and macros">Edit Templates</button>
+                    </div>
+                    <div class="bmt-help-text">Open the template editor to configure BunnyMo templates and their macro definitions.</div>
+                </div>
+            </div>
+
+            <!-- Display & Visual Settings -->
+            <div class="bmt-card">
+                <div class="bmt-card-header">
+                    <h3>🎨 Display & Visual Settings</h3>
+                    <p class="bmt-card-subtitle">Customize how BunnyMo appears in chat</p>
+                </div>
+                <div class="bmt-card-body">
+                    <div class="bmt-settings-grid">
+                        <div class="bmt-setting-item">
+                            <label class="bmt-label">
+                                <span class="bmt-label-text">Character Detection Sensitivity</span>
+                                <span class="bmt-label-hint">How many recent messages to scan for characters</span>
+                            </label>
+                            <select id="bmt-sensitivity" class="bmt-select">
+                                <option value="low">Conservative (5 messages)</option>
+                                <option value="medium">Balanced (10 messages)</option>
+                                <option value="high">Aggressive (20 messages)</option>
+                            </select>
+                        </div>
+                        <div class="bmt-setting-item">
+                            <label class="bmt-label">
+                                <span class="bmt-label-text">Max Characters Displayed</span>
+                                <span class="bmt-label-hint">Limit visible characters to prevent UI clutter</span>
+                            </label>
+                            <input type="number" id="bmt-max-chars" class="bmt-input" min="1" max="20" value="6">
+                        </div>
+                        <div class="bmt-setting-item">
+                            <label class="bmt-toggle">
+                                <input type="checkbox" id="bmt-auto-hide" checked>
+                                <span class="bmt-toggle-slider"></span>
+                                <span class="bmt-toggle-label">Auto-hide when no characters found</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Token Optimization -->
+            <div class="bmt-card">
+                <div class="bmt-card-header">
+                    <h3>🔧 Token Optimization</h3>
+                    <p class="bmt-card-subtitle">Reduce AI context usage while maintaining functionality</p>
+                </div>
+                <div class="bmt-card-body">
+                    <div class="bmt-form-group">
+                        <label class="bmt-toggle">
+                            <input type="checkbox" id="bmt-ai-use-compact-format" checked>
+                            <span class="bmt-toggle-slider"></span>
+                            <span class="bmt-toggle-label">Compact AI Format</span>
+                        </label>
+                        <div class="bmt-help-text">Send abbreviated character data to AI to save tokens. Display cards remain full-featured.</div>
+                    </div>
+                    
+                    <div class="bmt-form-group">
+                        <label class="bmt-label">
+                            <span class="bmt-label-text">Max Characters for AI Context</span>
+                            <span class="bmt-label-hint">Limit characters sent to AI (display shows all detected)</span>
+                        </label>
+                        <div class="bmt-slider-container">
+                            <input type="range" id="bmt-ai-max-characters" min="1" max="10" value="4" class="bmt-slider">
+                            <span class="bmt-slider-value" id="bmt-ai-max-characters-value">4</span>
+                        </div>
+                    </div>
+                    
+                    <div class="bmt-form-group">
+                        <label class="bmt-label">
+                            <span class="bmt-label-text">Priority Categories</span>
+                            <span class="bmt-label-hint">Which tag types are most important (comma-separated)</span>
+                        </label>
+                        <input type="text" id="bmt-ai-priority-tags" class="bmt-input" value="species,personality,physical" placeholder="species,personality,physical">
+                        <div class="bmt-help-text">Tags in these categories will be prioritized when reducing context size</div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Import Templates Modal -->
+<div id="bmt-import-modal" class="bmt-modal" style="display: none;">
+    <div class="bmt-modal-overlay"></div>
+    <div class="bmt-modal-content">
+        <div class="bmt-modal-header">
+            <h3>📁 Import Templates</h3>
+            <button class="bmt-modal-close" id="bmt-close-import-modal">
+                <i class="fa-solid fa-times"></i>
+            </button>
+        </div>
+        <div class="bmt-modal-body">
+            <div class="bmt-form-group">
+                <label class="bmt-label">
+                    <span class="bmt-label-text">Template JSON Data</span>
+                    <span class="bmt-label-hint">Paste exported template data here</span>
+                </label>
+                <textarea id="bmt-import-data" class="bmt-textarea" rows="12" placeholder="Paste exported template JSON here..."></textarea>
+            </div>
+        </div>
+        <div class="bmt-modal-footer">
+            <button id="bmt-cancel-import" class="bmt-secondary-btn">
+                <i class="fa-solid fa-times"></i>
+                Cancel
+            </button>
+            <button id="bmt-confirm-import" class="bmt-primary-btn">
+                <i class="fa-solid fa-upload"></i>
+                Import Templates
+            </button>
+        </div>
+    </div>
+</div>
