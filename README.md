@@ -64,6 +64,9 @@ Step 5: RP! And watch your characters tags be used the *right* way (hopefully lm
 
 
 ### Features: Tag Consistency⚡
+
+<img width="1196" height="776" alt="image" src="https://github.com/user-attachments/assets/40e7ec09-094c-4259-9b89-f5f86c24ee11" />
+
 As you roleplay, **character names trigger automatic trait injection**:
 - Mention "Luna" → BunnyMoTags injects her consistent kitsune/kuudere traits
 - Mention "Marcus" → His warrior/stoic attributes auto-populate
@@ -81,6 +84,15 @@ Keep track of what's happening behind the scenes:
 - **See trigger patterns** in real-time
 - **Adjust per-chat settings** for different scenarios
 - **Monitor system performance** and prevent issues
+
+  ### Features: Fully Customizable Framework
+  Make your experience your own:
+ <img width="1693" height="821" alt="image" src="https://github.com/user-attachments/assets/8faf4985-32ec-48a6-82d9-37cd869b1e69" />
+ - **For advanced power users** who want customization on their customization.
+ - **All prompts that the BunnyMoTags extension uses** Fully editable from a neat screen within your settings.
+ - **Macro editing, creation, and explanations** for all your fun template creating and editing needs!
+ - Save, delete, and choose** which templates are used for what function. The choice is yours!
+
 
 ---
 
@@ -243,4 +255,5 @@ BunnyRecc isn't just random generation - it's **intelligent character crafting**
 
 
 *Because your carefully crafted BunnyMo characters deserve to stay exactly who you made them to be!* ✨
+
 
