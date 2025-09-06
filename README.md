@@ -71,6 +71,10 @@ As you roleplay, **character names trigger automatic trait injection**:
 - Mention "Luna" → BunnyMoTags injects her consistent kitsune/kuudere traits
 - Mention "Marcus" → His warrior/stoic attributes auto-populate
 - **Zero hallucination** - AI gets the *exact* traits from your packs
+(Below is an example using the glorious nemoengine preset; but fear not! BunnyTags can and should be used with whichever preset and LLM you wish!)
+
+<img width="1126" height="684" alt="image" src="https://github.com/user-attachments/assets/c98ab214-2785-4d80-893a-b574fb24712a" />
+---
 
 ### Features: Generate New Characters with BunnyRecc 🎭
 Need a new character? BunnyRecc has your back:
@@ -255,5 +259,6 @@ BunnyRecc isn't just random generation - it's **intelligent character crafting**
 
 
 *Because your carefully crafted BunnyMo characters deserve to stay exactly who you made them to be!* ✨
+
 
 
