@@ -17,9 +17,9 @@ No more wondering "wait, was Luna a kitsune or a neko?" or having your AI sudden
 
 ### 🎯 **Tag Consistency Tracker**
 The heart of BunnyMoTags - **prevents tag hallucination** by maintaining a living database of your character traits:
-- **Auto-detects** when character names are mentioned in chat
-- **Injects** their consistent traits from your BunnyMo packs
-- **Prevents AI confusion** about established character attributes
+- **Auto-detects** when character names are mentioned in chat with the help of intelligent lorebook management.
+- **Injects** their consistent traits from your Character Repositories
+- **Prevents AI confusion** about established character attributes by giving you full control of what they are.
 - **Works seamlessly** with your existing BunnyMo lorebook setup
 
 *Similar to Guided Generations Extension, but laser-focused on BunnyMo tag consistency!*
@@ -45,22 +45,34 @@ Your **WorldInfo Recommender for BunnyMo** - but way more specialized:
 ## 🚀 The BunnyMoTags Workflow
 
 ### Step 1: Load Your BunnyMo Arsenal 🥕
-Install your favorite BunnyMo packs. BunnyMoTags automatically discovers and indexes all available character traits and templates.
+Install your favorite BunnyMo packs. Pick and choose your favorites. <img width="689" height="264" alt="image" src="https://github.com/user-attachments/assets/ca933b20-13c0-4933-b7fc-9d66c69a6da2" />
 
-### Step 2: Consistent Character Injection ⚡
+
+### Step 2: Pick your tag packs, (The Dere, MBTI, Linguistics, etc packs) And make sure they are ***labeled as such.***<img width="165" height="143" alt="image" src="https://github.com/user-attachments/assets/0d8949df-b568-4643-a538-65f3e8d33486" />
+
+### Step 3: Make a lorebook that you will use as a 'Character respository' (Examples can be found in the main Bunnymo file as to how they should be set up.) <img width="1157" height="518" alt="image" src="https://github.com/user-attachments/assets/9983e123-3088-48a6-96ee-24cac4cf9a3f" /> Then run the !fullsheet command either in chat for using the new BunnyRecc system; and copy all the tags output at the bottom into the Lorebook entry pictured above. Example: <img width="1159" height="581" alt="image" src="https://github.com/user-attachments/assets/6228546a-b7cd-4658-9441-80958c9a09a7" />
+
+Step 4: In the same place you chose your tag libraries, go back and select your character repo, and click the tag library symbol to toggle it to its other function. <img width="677" height="244" alt="image" src="https://github.com/user-attachments/assets/43e74ad6-9a77-4f28-bf52-075ce268bcd4" /> (Unsure if you did it right? Click the scan selected lorebooks button!)
+
+Step 5: RP! And watch your characters tags be used the *right* way (hopefully lmao) each and every time! Unsure if their traits are actually being injected? Check your settings and toggle 'character cards' on! Or check the COT and see if the tags are being explicitly mentioned.
+
+-----
+
+
+### Features: Tag Consistency⚡
 As you roleplay, **character names trigger automatic trait injection**:
 - Mention "Luna" → BunnyMoTags injects her consistent kitsune/kuudere traits
 - Mention "Marcus" → His warrior/stoic attributes auto-populate
 - **Zero hallucination** - AI gets the *exact* traits from your packs
 
-### Step 3: Generate New Characters with BunnyRecc 🎭
+### Features: Generate New Characters with BunnyRecc 🎭
 Need a new character? BunnyRecc has your back:
 1. **Choose generation type**: Fullsheet or Quicksheet
 2. **Pick specific traits** from your active packs (or let it surprise you)
 3. **Generate** comprehensive character profiles instantly
 4. **Tags auto-add** to your consistency tracker
 
-### Step 4: Monitor with BMI WorldInfo 📊
+### Features: Monitor with BMI WorldInfo 📊
 Keep track of what's happening behind the scenes:
 - **See trigger patterns** in real-time
 - **Adjust per-chat settings** for different scenarios
@@ -101,7 +113,6 @@ BunnyMoTags tracks the full spectrum of BunnyMo psychological frameworks:
 ## 🔧 Advanced BMI Features
 
 ### 🌍 **Professional WorldInfo Display**
-Clean, minimal design that matches SillyTavern's native aesthetic:
 - **Real-time trigger monitoring** with detailed explanations
 - **Entry status tracking** (active, inactive, probability-based)
 - **Scan depth visualization** with override controls
@@ -129,7 +140,7 @@ Because runaway WorldInfo can ruin your day:
 ## 🎛️ BunnyRecc: Your BunnyMo Character Studio
 
 ### 🎨 **Intelligent Character Generation**
-- **Template Discovery**: Automatically finds `!fullsheet` and `!quicksheet` templates in your packs
+- **Template Discovery**: Automatically finds `!fullsheet` and `!quicksheet` templates in your template manager (found in the settings) <img width="1693" height="821" alt="image" src="https://github.com/user-attachments/assets/2b11e266-9fd3-4199-b45d-a7a9a01ab57e" />
 - **Trait Selection Interface**: Visual picker for specific psychological attributes
 - **Pack Integration**: Uses content from your active BunnyMo lorebooks
 - **Session Persistence**: Remember your preferences across character creation sessions
@@ -144,18 +155,11 @@ BunnyRecc isn't just random generation - it's **intelligent character crafting**
 • Surprise Me: Let your packs choose the traits
 ```
 
-### 🔄 **Iterative Development**
-Build characters piece by piece:
-- **Save partial progress** during character creation
-- **Refine traits** with multiple generation passes
-- **Mix and match** elements from different packs
-- **Preview integration** with your existing character roster
-
 ---
 
 ## ⚙️ Installation & Integration
 
-1. **Extract** BunnyMoTags to `SillyTavern/public/scripts/extensions/third-party/`
+1. **Copy the link to** BunnyMoTags and paste it into your extension manager.
 2. **Load** your BunnyMo pack collection
 3. **Restart** SillyTavern - BunnyMoTags auto-discovers your packs
 4. **Configure** per-chat settings if desired (optional)
@@ -165,19 +169,19 @@ Build characters piece by piece:
 
 ---
 
-## 🎯 Comparison to Similar Systems
+## 🎯 Homage to Similar Systems
 
-### vs. Guided Generations Extension
+### Thank you Guided Generations for helping me make:
 - **Specialized**: Built specifically for BunnyMo pack ecosystem
 - **Tag-Aware**: Understands psychological trait categories
 - **Pack Integration**: Native BunnyMo lorebook discovery and indexing
 
-### vs. WorldInfo Recommender  
+### Thank you WorldInfo Recommender for helping me make:
 - **BunnyMo-Focused**: Templates and suggestions tailored to BunnyMo format
 - **Trait Picker**: Visual selection instead of pure recommendation
 - **Character Generation**: Full character creation, not just WorldInfo suggestions
 
-### vs. Basic WorldInfo
+### Thank you WorldInfo for helping me make:
 - **Smart Monitoring**: Real-time trigger analysis and explanation
 - **Consistency Tracking**: Prevents character trait drift over time
 - **Advanced Control**: Per-chat configurations and override systems
@@ -193,7 +197,7 @@ Build characters piece by piece:
 - **Pack updates** (auto-detects when lorebooks change)
 
 ### 🔗 **Workflow Enhancement**
-- **Non-disruptive**: Works with your existing BunnyMo process
+- **Non-disruptive**: Works with your existing BunnyMo process (Hopefully!)
 - **Additive value**: Enhances without replacing your workflow  
 - **Backwards compatible**: Existing characters work immediately
 - **Future-proof**: Designed for upcoming BunnyMo features
@@ -218,11 +222,12 @@ Build characters piece by piece:
 - **Pack conflict resolution** with smart trait merging
 - **Export/Import** of character consistency databases
 - **Advanced analytics** on trait usage patterns
+- **Growth tracking** for different characters who begin to change for better or worse.
 
 ---
 
 *Built with 🥕 by the BunnyMo Community*  
-*Version 1.0.1 - Because consistent characters make better stories!*
+*Version .13 - Because consistent characters make better stories!*
 
 ---
 
@@ -231,5 +236,6 @@ Build characters piece by piece:
 - **Continuity perfectionists** who hate AI hallucination of wrong traits
 - **WorldInfo power users** who need visibility into what's triggering
 - **Character collectors** managing large rosters across multiple chats
+
 
 *Because your carefully crafted BunnyMo characters deserve to stay exactly who you made them to be!* ✨
