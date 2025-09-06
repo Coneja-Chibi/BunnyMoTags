@@ -44,15 +44,19 @@ Your **WorldInfo Recommender for BunnyMo** - but way more specialized:
 
 ## 🚀 The BunnyMoTags Workflow
 
+
 ### Step 1: Load Your BunnyMo Arsenal 🥕
 Install your favorite BunnyMo packs. Pick and choose your favorites. <img width="689" height="264" alt="image" src="https://github.com/user-attachments/assets/ca933b20-13c0-4933-b7fc-9d66c69a6da2" />
 
 
+
 ### Step 2: Pick your tag packs, (The Dere, MBTI, Linguistics, etc packs) And make sure they are ***labeled as such.***<img width="165" height="143" alt="image" src="https://github.com/user-attachments/assets/0d8949df-b568-4643-a538-65f3e8d33486" />
+
 
 ### Step 3: Make a lorebook that you will use as a 'Character respository' (Examples can be found in the main Bunnymo file as to how they should be set up.) <img width="1157" height="518" alt="image" src="https://github.com/user-attachments/assets/9983e123-3088-48a6-96ee-24cac4cf9a3f" /> Then run the !fullsheet command either in chat for using the new BunnyRecc system; and copy all the tags output at the bottom into the Lorebook entry pictured above. Example: <img width="1159" height="581" alt="image" src="https://github.com/user-attachments/assets/6228546a-b7cd-4658-9441-80958c9a09a7" />
 
-Step 4: In the same place you chose your tag libraries, go back and select your character repo, and click the tag library symbol to toggle it to its other function. <img width="677" height="244" alt="image" src="https://github.com/user-attachments/assets/43e74ad6-9a77-4f28-bf52-075ce268bcd4" /> (Unsure if you did it right? Click the scan selected lorebooks button!)
+Step 4: In the same place you chose your tag libraries, go back and select your character repo, and click the tag library symbol to toggle it to its other function. (Unsure if you did it right? Click the scan selected lorebooks button!) <img width="677" height="244" alt="image" src="https://github.com/user-attachments/assets/43e74ad6-9a77-4f28-bf52-075ce268bcd4" />
+
 
 Step 5: RP! And watch your characters tags be used the *right* way (hopefully lmao) each and every time! Unsure if their traits are actually being injected? Check your settings and toggle 'character cards' on! Or check the COT and see if the tags are being explicitly mentioned.
 
@@ -239,3 +243,4 @@ BunnyRecc isn't just random generation - it's **intelligent character crafting**
 
 
 *Because your carefully crafted BunnyMo characters deserve to stay exactly who you made them to be!* ✨
+
